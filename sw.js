@@ -1,5 +1,5 @@
 const PREFIX='trident-'+new URL(self.registration.scope).pathname+'-';
-const CACHE=PREFIX+"a88ee62ad7f6250f";
+const CACHE=PREFIX+"4cfef9974fee6670";
 self.addEventListener('install',e=>e.waitUntil((async()=>{
 const old=await caches.keys();
 const cache=await caches.open(CACHE);await cache.addAll(['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png']);
